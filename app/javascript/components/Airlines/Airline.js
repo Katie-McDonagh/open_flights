@@ -14,7 +14,9 @@ const AirlineLogo = styled.div`
     border-radius: 100%;
   }
 `
-const AirlineName = styled.div``
+const AirlineName = styled.div`
+  padding: 20px 0 10px 0;
+`
 const LinkWrapper = styled.div``
 
 
@@ -24,7 +26,7 @@ const Airline = () => {
       <AirlineLogo>
         <img src={props.attributes.mage_url} alt={props.attributes.name}/>
       </AirlineLogo>
-      <div className='airline-name'>{props.attributes.name}</div>
+      <AirlineName>{props.attributes.name}</AirlineName>
       <div className='airline-score'>{props.attributes.avg_score}</div>
       <div className='airline-link'>
         <Link to={`/airlines/${props.attributes.slug}`}>View Airline</Link >
