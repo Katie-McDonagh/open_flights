@@ -16,7 +16,10 @@ const Header = styled.div`
     font-size: 42px;
   }
 `
-const SubHeader = styled.div``
+const SubHeader = styled.div`
+  font-weight: 300;
+  font-size: 26px;
+`
 const Grid = styled.div``
 
 
@@ -45,7 +48,7 @@ const Airlines = () => {
     <Home>
       <Header>
         <h1>Open flights</h1>
-        <div className='subHeader'>Honest, unbiased reviews.</div>
+        <SubHeader>Honest, unbiased reviews.</SubHeader>
       </Header>
         <div className='grid'>
           {grid}
