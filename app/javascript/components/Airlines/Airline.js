@@ -11,7 +11,7 @@ const AirlineLogo = styled.div`
   text-align: center;
   margin-left: auto;
   margin-right: auto; 
-  padding-top: 10xp;
+  padding-top: 10xp; 
   img {
     height: 50px;
     width: 50px;
