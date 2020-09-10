@@ -1,6 +1,18 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import Axios from 'axios'
 import Airline from './Airline'
+import styled from 'styled-components'
+
+const Home = styled.div`
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+`
+const Header = styled.div``
+const SubHeader = styled.div``
+const Grid = styled.div``
+
 
 const Airlines = () => {
   const [airlines, setAirLines] = useState([])
@@ -24,7 +36,7 @@ const Airlines = () => {
   })
 
   return (
-    <div className='home'>
+    <Home>
       <div className='header'>
         <h1>Open flights</h1>
         <div className='subHeader'>Honest, unbiased reviews.</div>
@@ -32,7 +44,7 @@ const Airlines = () => {
         <div className='grid'>
           {grid}
         </div>
-  </div>
+  </Home>
   )
 }
 
