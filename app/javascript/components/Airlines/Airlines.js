@@ -15,8 +15,12 @@ const Airlines = () => {
     .catch( resp => console.log(resp) )
   }, [airlines.length])
 
-  const list = airplanes.map( item => {
-    return (<li key={item.attributes.name}>{item.attributes.name}</li>)
+  const grid = airplanes.map( item => {
+    return (
+      <Airline
+        key={item.attributes.name}
+        attributes={item.attributes}
+        />)
   })
 
   return (
@@ -26,7 +30,7 @@ const Airlines = () => {
         <div className='subHeader'>Honest, unbiased reviews.</div>
       </div>
         <div className='grid'>
-          <ul>{list}</ul>
+          {grid}
         </div>
   </div>
   )
