@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 const Airline = () => {
   return (
@@ -9,10 +10,10 @@ const Airline = () => {
       <div className='airline-name'>{props.attributes.name}</div>
       <div className='airline-score'>{props.attributes.avg_score}</div>
       <div className='airline-link'>
-        <a href={`/airlines/${props.attributes.slug}`}>View Airline</a>
+        <Link to={`/airlines/${props.attributes.slug}`}>View Airline</a>
       </div>
     </div>
   )
 }
 
-export default  Airline
+export default  Airline 
