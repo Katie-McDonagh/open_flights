@@ -9,7 +9,13 @@ const Home = styled.div`
   margin-right: auto;
   max-width: 1200px;
 `
-const Header = styled.div``
+const Header = styled.div`
+  padding: 100px 100px 10px 100px;
+  
+  h1{
+    font-size: 42px;
+  }
+`
 const SubHeader = styled.div``
 const Grid = styled.div``
 
@@ -37,10 +43,10 @@ const Airlines = () => {
 
   return (
     <Home>
-      <div className='header'>
+      <Header>
         <h1>Open flights</h1>
         <div className='subHeader'>Honest, unbiased reviews.</div>
-      </div>
+      </Header>
         <div className='grid'>
           {grid}
         </div>
