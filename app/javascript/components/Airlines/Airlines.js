@@ -20,7 +20,13 @@ const SubHeader = styled.div`
   font-weight: 300;
   font-size: 26px;
 `
-const Grid = styled.div``
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  padding: 20px;
+  `
 
 
 const Airlines = () => {
@@ -50,9 +56,9 @@ const Airlines = () => {
         <h1>Open flights</h1>
         <SubHeader>Honest, unbiased reviews.</SubHeader>
       </Header>
-        <div className='grid'>
+        <Grid>
           {grid}
-        </div>
+        </Grid>
   </Home>
   )
 }
