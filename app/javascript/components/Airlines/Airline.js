@@ -10,7 +10,7 @@ const Airline = () => {
       <div className='airline-name'>{props.attributes.name}</div>
       <div className='airline-score'>{props.attributes.avg_score}</div>
       <div className='airline-link'>
-        <Link to={`/airlines/${props.attributes.slug}`}>View Airline</a>
+        <Link to={`/airlines/${props.attributes.slug}`}>View Airline</Link>
       </div>
     </div>
   )
