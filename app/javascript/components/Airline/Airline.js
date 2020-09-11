@@ -16,8 +16,6 @@ const Airline = (props) => {
     .catch( resp => console.log(resp))
 
   }, [])
-
-const Airline = () => {
   return <div>This is the Airline#show for our app</div>
 }
 
