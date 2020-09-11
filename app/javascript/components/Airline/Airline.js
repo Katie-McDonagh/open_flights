@@ -12,7 +12,7 @@ const Airline = (props) => {
     // This uses the v2 api (graphql) as of 05/09/2020.
     // For the v1 api endpoint use: axios.get('/api/v1/airlines/:slug')
     axios.get(url)
-    .then( resp => console.log(resp))
+    .then( resp => setAirline(resp.data) )
     .catch( resp => console.log(resp))
 
   }, [])
