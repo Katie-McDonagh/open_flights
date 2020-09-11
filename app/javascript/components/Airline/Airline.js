@@ -16,13 +16,13 @@ const Airline = (props) => {
     .catch( resp => console.log(resp))
 
   }, [])
-  return <div className='wrapper'>
-    <div className='column'>
-      <div className='header'></div>
-      <div className='reviews'></div>
+  return <div className="wrapper">
+    <div className="column">
+      <div className="header"></div>
+      <div className="reviews"></div>
     </div>
-    <div className='column'>
-      <div className='review-form'>[Review form goes here]</div>
+    <div className="column">
+      <div className="review-form">[Review form goes here]</div>
     </div>
   </div>
 }
