@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from './Header'
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+margin-left: auto;
+margin-right: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+`
+const column = styled.div``
+const Main  = styled.div``
+
+
 
 const Airline = (props) => {
   const [airline, setAirline] = useState({})
@@ -22,6 +34,7 @@ const Airline = (props) => {
   }, [])
   return <div className="wrapper">
     <div className="column">
+      <div classname='main'>
       {
         loaded && 
       <Header 
@@ -30,7 +43,8 @@ const Airline = (props) => {
         />
       }
       <div className="reviews"></div>
-    </Header>
+      </div>
+    </div>
     <div className="column">
       <div className="review-form">[Review form goes here]</div>
     </div>
